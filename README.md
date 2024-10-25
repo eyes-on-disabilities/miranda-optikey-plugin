@@ -1,4 +1,4 @@
-# SmoothMousePlugin
+# MirandaOptikeyPlugin
 
 A sample eyetracker plugin for Optikey that uses mouse input with added smoothing.
 
@@ -15,8 +15,8 @@ The project depends on:
 ## Building this repo
 
 -  Clone the repo from github:
-`git clone https://github.com/kmcnaught/SmoothMousePlugin.git`
-- Open `SmoothMouse.sln` in Visual Studio
+`git clone https://github.com/eyes-on-disabilities/miranda-optikey-plugin.git`
+- Open `MirandaOptikey.sln` in Visual Studio
 - Build for x64
 
 ## Testing the resulting plugin locally
