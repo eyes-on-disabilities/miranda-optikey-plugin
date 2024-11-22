@@ -14,7 +14,7 @@ The project depends on:
 -  Clone the repo from github:
 `git clone https://github.com/eyes-on-disabilities/miranda-optikey-plugin.git`
 - Open `MirandaOptikey.sln` in Visual Studio
-- Load the libraries `System.Reactive.Linq` and `WindowsBase` (run `NuGet\Install-Package Rx-Linq -Version 2.2.5`)
+- Load the libraries `System.Reactive.Linq` and `WindowsBase` (run `NuGet\Install-Package Rx-Linq -Version 2.2.5` in the NuGet CLI)
 - Build for x64
 
 ## Testing the resulting plugin locally
