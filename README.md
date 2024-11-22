@@ -1,6 +1,6 @@
 # Miranda Optikey Plugin
 
-A plugin that allows the output from the [Miranda calibration](https://codeberg.org/eyes-on-disabilities/miranda-eye-tracking-screen-calibrator) tool to be used with [Optikey](https://github.com/Optikey/Optikey/).
+A plugin that allows the output from the [Miranda calibration tool](https://codeberg.org/eyes-on-disabilities/miranda-eye-tracking-screen-calibrator) to be used with [Optikey](https://github.com/Optikey/Optikey/).
 This project is a fork from https://github.com/kmcnaught/SmoothMousePlugin.
 
 ## Dependencies
