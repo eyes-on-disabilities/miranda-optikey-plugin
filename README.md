@@ -1,22 +1,20 @@
-# MirandaOptikeyPlugin
+# Miranda Optikey Plugin
 
-A sample eyetracker plugin for Optikey that uses mouse input with added smoothing.
+A plugin that allows the output from the [Miranda calibration](https://codeberg.org/eyes-on-disabilities/miranda-eye-tracking-screen-calibrator) tool to be used with [Optikey](https://github.com/Optikey/Optikey/).
+This project is a fork from https://github.com/kmcnaught/SmoothMousePlugin.
 
-This is intended to illustrate how to use the Optikey plugin interface to support your own eye tracker or alternative points source. 
-
-## How this plugin implementation works
-
-`MouseInput.cs` defines a class that implements the `IPointService` interface from Optikey's `JuliusSweetland.OptiKey.Contracts`. It has a `Point` event which publishes (x,y) positions on a regular basis. In this example, the data comes from polling the mouse cursor, but it could just as easily come from an event-driven eye tracker API. It also has an `Error` event from `INotifyErrors` which allows it to publish any errors. 
+## Dependencies
 
 The project depends on:
 - System libraries: `System.Reactive.Linq` and `WindowsBase`
-- Optikey's provided DLLs: `JuliusSweetland.OptiKey.Contracts` and `PointSourceUtils` which gives us `Time.HighResolutionUtcNow` from `JuliusSweetland.Optikey.Static`. The latter library also contains graphics-related utilities such as `DipScalingFactorX` and `PrimaryScreenHeightInPixels` which may be useful for eye trackers that report their positions relative to screen dimensions. 
+- Optikey's provided DLLs: `JuliusSweetland.OptiKey.Contracts` and `PointSourceUtils` which gives us `Time.HighResolutionUtcNow` from `JuliusSweetland.Optikey.Static`. The latter library also contains graphics-related utilities such as `DipScalingFactorX` and `PrimaryScreenHeightInPixels` which may be useful for eye-trackers that report their positions relative to screen dimensions. 
 
 ## Building this repo
 
 -  Clone the repo from github:
 `git clone https://github.com/eyes-on-disabilities/miranda-optikey-plugin.git`
 - Open `MirandaOptikey.sln` in Visual Studio
+- Load the libraries `System.Reactive.Linq` and `WindowsBase` (run `NuGet\Install-Package Rx-Linq -Version 2.2.5`)
 - Build for x64
 
 ## Testing the resulting plugin locally
